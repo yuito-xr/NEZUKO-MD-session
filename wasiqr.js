@@ -59,14 +59,8 @@ router.get('/', async (req, res) => {
 				   let session = await Qr_Code_By_Wasi_Tech.sendMessage(Qr_Code_By_Wasi_Tech.user.id, { text: '' + b64data });
 	
 				   let WASI_MD_TEXT = `
-┏━━━━━━━━━━━━━━
-┃NEZUKO SESSION IS 
-┃SUCCESSFULLY
-┃CONNECTED ✅🔥
-┗━━━━━━━━━━━━━━━
-_____________________________________
-	
-_Don't Forget To Give Star To My Repo_`
+       SUCCESSFULLY
+       `
 	 await Qr_Code_By_Wasi_Tech.sendMessage(Qr_Code_By_Wasi_Tech.user.id,{text:WASI_MD_TEXT},{quoted:session})
 
 
